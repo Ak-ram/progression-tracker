@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# videos
+# videos and gifs
 *.mp4
+*-show.gif
