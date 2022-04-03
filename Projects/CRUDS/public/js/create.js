@@ -78,7 +78,7 @@ showItem = () => {
   for (let i = 0; i < items.length; i++) {
     item += `
   <div class="item grid grid-cols-6 h-[45px] border-b border-slate-200	" data-item-index=${i}>
-    <div class="checkbox flex items-center justify-center capitalize border-l border-slate-200	"><i class="bi bi-square cursor-pointer"></i></div>
+    <div class="checkbox flex items-center justify-center capitalize border-l border-slate-200	"><i class="icon-square cursor-pointer"></i></div>
     
     <div class='flex items-center justify-center capitalize border-l border-slate-200	'>
       <span class='item-pre-define'>ID: </span>
@@ -97,11 +97,11 @@ showItem = () => {
       <span>${items[i].price} L.E</span>
     </div>
     <div class="actions relative flex items-center justify-end capitalize border-l border-slate-200	">
-    <i class="bi bi-three-dots-vertical cursor-pointer mr-7"></i>
+    <i class="icon-dots-three-vertical cursor-pointer mr-7"></i>
     <div class="actions-box hidden	relative flex items-center justify-center order-first	bg-dark-blue rounded-sm">
-      <div onclick='deleteItem(${i})' class="delete py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="far fa-trash-alt py-1"></i></div>
-      <div onclick='editItem(${i})' class="edit py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="bi bi-pen"></i></div>
-      <div onclick='duplicateItem(${i})' class="duplicate py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="bi bi-clipboard-plus"></i></div>
+      <div onclick='deleteItem(${i})' class="delete py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="icon-trash-2 py-1"></i></div>
+      <div onclick='editItem(${i})' class="edit py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="icon-pen-tool py-1"></i></div>
+      <div onclick='duplicateItem(${i})' class="duplicate py-1 px-2 cursor-pointer text-slate-400 flex items-center justify-center bg-gradient-to-r hover:text-white hover:from-pink-500 hover:to-yellow-500"><i class="icon-copy py-1"></i></div>
     </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 // Displaying Mode [Grid or Rows]
 gridRowSwitcher.addEventListener("click", () => {
-  toggleClass(gridRowSwitcher, "bi-menu-button-wide");
+  toggleClass(gridRowSwitcher, "icon-grid");
   toggleClass(itemsWrapper, "square-template");
 });
 
@@ -12,12 +12,12 @@ itemSetup = () => {
     let actionsBox =
       itemsWrapper.children[i].children[5].children[0].nextElementSibling;
     selectbox.addEventListener("click", () => {
-      if (selectbox.classList.contains("bi-check-square")) {
-        removeClass(selectbox, "bi-check-square");
-        addClass(selectbox, "bi-square");
+      if (selectbox.classList.contains("icon-check-square")) {
+        removeClass(selectbox, "icon-check-square");
+        addClass(selectbox, "icon-square");
       } else {
-        addClass(selectbox, "bi-check-square");
-        removeClass(selectbox, "bi-square");
+        addClass(selectbox, "icon-check-square");
+        removeClass(selectbox, "icon-square");
       }
       toggleClass(itemsWrapper.children[i], "item-selected");
       numberOfSelectedItems.innerHTML = selectedItems.length;
