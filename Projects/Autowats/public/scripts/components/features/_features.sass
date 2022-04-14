@@ -1,0 +1,33 @@
+@use '../../../styles/sass/_mixins' as *
+.features
+    margin: 5vw 0
+    .brands
+        padding: 1vw
+        @include flex(row,space-around,center)
+        img.brand
+            @include dimensions(13vw,unset)
+    .ourfeatures
+        background: #F7F7F7
+        padding: 3vw 0
+        .feats
+            @include flex(row,space-evenly, center)
+            margin-top: 5vw
+            .feat
+                @include flex(row,center, center)
+                @include dimensions(21vw,unset)
+                padding: 3vw 1vw
+                flex-direction: column
+                box-shadow: 0px 0px 4px rgb(193 193 193)
+                transition: background .3s
+                &:hover
+                    transition: background .3s
+                    background: cyan
+                img
+                    @include dimensions(5vw,unset)
+                h3
+                    font-size: 1.8vw
+                p
+                    text-align: center
+                    font-size: 1.3vw
+                > *
+                    color: #333

@@ -1,0 +1,27 @@
+@use '../../../styles/sass/_mixins' as *
+@use '../../../styles/sass/_variables.scss' as *
+header.navbar
+    border-bottom: 1px solid map-get($colors,'gray-100' )
+    @include pos(absolute,0,0,0,0)
+    @include dimensions(unset,fit-content)
+    .container
+        @include flex(row,space-around,unset)
+
+        img.logo
+            @include dimensions(17vw,unset)
+        nav
+            flex-basis: 40vw
+            @include flex(row,space-evenly,center)
+            a
+                padding: 1vw
+                cursor: inherit
+                &:hover
+                    background: map-get($colors,'light-navy')
+        form
+            @include flex(row,space-between,center)
+            label
+                @include flex(row,center,center)
+        button
+            padding: .7vw 1.6vw
+            .lang-icon
+                @include dimensions(2.5vw,unset)

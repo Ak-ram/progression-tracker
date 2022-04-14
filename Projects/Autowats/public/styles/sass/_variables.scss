@@ -1,0 +1,28 @@
+$padding: (
+  "": "",
+  "y": "-block",
+  "x": "-inline",
+  "t": "-top",
+  "b": "-bottom",
+  "r": "-right",
+  "l": "-left",
+);
+$margin: (
+  "": "",
+  "y": "-block",
+  "x": "-inline",
+  "t": "-top",
+  "b": "-bottom",
+  "r": "-right",
+  "l": "-left",
+);
+$colors: (
+  "linear": linear-gradient(99.58deg, #233155 12.58%, #39224d 64.36%),
+  "white": #fff,
+  "shadowCyan": #23d4ce,
+  'cyan': cyan,
+  "dull": #afafaf,
+  "gray-100":#81818166,
+  'light-navy':#273964f7,
+);
+$max: 10;

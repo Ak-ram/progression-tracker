@@ -1,0 +1,48 @@
+@use '../../../styles/sass/_mixins' as *
+@use '../../../styles/sass/_variables' as *
+section.header
+    @include pos(relative,0,0,0,0)
+    @include dimensions(100%,50vw)
+    .carousel_container
+        @include pos(absolute,0,0,0,0)
+        @include dimensions(unset,fit-content)
+    .layer
+        @include dimensions(100%,50vw)
+        background-repeat: no-repeat
+        background-size: contain
+        background: #011440
+        background-image: radial-gradient(#ffffff33 1px, #011440 1px)
+        -webkit-background-size: 20px 20px
+        // background-image: url(../../svg/layer.svg)
+        @include pos(relative,unset,unset,unset,unset)
+    .phone-layer
+        @include dimensions(16%,unset)
+        transform: translate(-50%, -50%)
+        @include pos(absolute,50%,unset,unset,85%)
+    .phone-screen
+        @include dimensions(15%,24vw)
+        transform: translate(-50%, -50%)
+        @include pos(absolute,50%,unset,unset,85%)
+    .indexes
+        gap: min(2vw,10px)
+        transform: translate(-50%, -50%)
+        @include flex(column,center,center)
+        @include dimensions(6px,76px)
+        @include pos(absolute,50%,unset,unset,min(3vw,15px))
+        span
+            max-width: 6px
+            max-height: 6px
+            border-radius: 100%
+            @include dimensions(1.5vw,1.5vw)
+            &:hover
+                background: map-get($colors, 'cyan')
+                transform: scale(1.6)
+    .layer-content
+        background: map-get($colors, 'light-navy')
+        border-left: .5vw solid map-get($colors, 'cyan')
+        font-size: 1.8vw
+        transform: translate(-50%, -50%)
+        @include dimensions(42vw,fit-content)
+        @include pos(absolute,50%,unset,unset,35%)
+        h2
+            color: map-get($colors, 'shadowCyan')

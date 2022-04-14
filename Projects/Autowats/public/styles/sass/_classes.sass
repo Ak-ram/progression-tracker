@@ -1,0 +1,114 @@
+@use './_variables' as *
+
+@for $i from 0 through $max
+    @each $short, $long in $padding
+        .p#{$short}-#{$i}
+            padding#{$long}: $i + vw
+
+    @each $short, $long in $margin
+        .m#{$short}-#{$i}
+            margin#{$long}: $i + px
+
+    .gap-#{$i}
+        gap: $i + px
+
+    .fs-#{$i}
+        font-size: ($i * .5) + vw
+
+    .radius-#{$i}
+        border-radius: $i + px
+
+    .z-#{$i}
+        z-index: $i
+// colors
+@each $clr, $hex in $colors
+    .clr-#{$clr}
+        color: $hex
+    .bg-#{$clr}
+        background: $hex
+
+.absolute
+    position: absolute
+// margin
+.m-auto
+    margin: auto
+.w-fill
+    width: 100%
+// cursor
+.pointer
+    cursor: pointer
+.custom-cursor
+    cursor: url('https://img.icons8.com/color-glass/20/000000/cursor.png'), auto
+
+// typography
+.fw-bold
+    font-weight: bold
+.capitalize
+    text-transform: capitalize
+.text-center
+    text-align: center
+.text-dark
+    color: #333
+.text-paragraph
+    font-size: 2vw
+    color: #333
+    margin-bottom: 3vw
+// effect
+.flash
+    z-index: 1
+    animation: blurity .5s linear
+@keyframes blurity
+    0%
+        filter: brightness(.5)
+    100%
+        filter: brightness(1)
+
+
+
+
+.hide
+    opacity: 0
+// active
+.active
+    background: cyan
+    transform: scale(1.6)
+
+// keyframes
+
+.melt-enter-active
+    animation: 2s melt-enter
+.melt-leave-active
+    animation: 2s melt-leave
+.spiral-enter-active
+    animation: 1s spiral reverse
+.spiral-leave-active
+    animation: 1s spiral
+
+// splashScreen
+
+svg#splashScreen
+    z-index: 20000
+    transition: all 0.5s
+    overflow: hidden
+    position: fixed
+    transform-origin: 0px 50vw
+    height: 100vh
+    width: 100vw
+    perspective: 200px
+    background: #000000
+    background-image: radial-gradient(#ffffff33 1px, #0b0e14 1px)
+    
+.d-none
+    display: none
+.splashScreen_char
+    stroke-dasharray: 1604
+    stroke-dashoffset: 1604
+
+.splashScreen_char_fillOnDrop
+    fill: #e02a18
+
+.splashScreen_char_draw
+    animation: splashScreen_char_draw 6s .5s linear forwards
+
+.splashScreen_view
+    animation: splashScreen_view 5s linear
