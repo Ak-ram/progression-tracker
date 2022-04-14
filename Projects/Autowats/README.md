@@ -49,3 +49,9 @@ And you will get something like this  👇
 <div align='center'>
   <img src='https://user-images.githubusercontent.com/69124951/163403472-ef069033-5d88-4b6d-94d6-eae68bf2c2cb.gif' />
  </div>
+
+
+## 4- Highly Scalable without one-line of media query
+thanks to css funcitons : ```min()```  ```max()``` ```calc()```
+and units:  ``` % ``` ``` vw ``` ``` vh ```
+there is no need to use media query 😉
