@@ -50,8 +50,19 @@ And you will get something like this  👇
   <img src='https://user-images.githubusercontent.com/69124951/163403472-ef069033-5d88-4b6d-94d6-eae68bf2c2cb.gif' />
  </div>
 
+## 4- Spiral and Melt effect with clip-path css property
+<div align='center'>
+  
+<img src="https://user-images.githubusercontent.com/69124951/163432302-4a01bbd2-5fb3-4352-a01d-2cb7878b75a8.gif" width="200px" />
+<img src="https://user-images.githubusercontent.com/69124951/163432308-68b9e004-7127-45c4-9a2e-e6c7e663ed55.gif" width="200px"/>
+  </div>
 
-## 4- Highly Scalable without one-line of media query
+
+
+## 5- Highly Scalable without one-line of media query
 thanks to css funcitons : ```min()```  ```max()``` ```calc()```
 and units:  ``` % ``` ``` vw ``` ``` vh ```
 there is no need to use media query 😉
+
+
+
